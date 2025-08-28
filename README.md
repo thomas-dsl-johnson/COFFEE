@@ -58,4 +58,4 @@ git clone --recurse-submodules https://github.com/thomas-dsl-johnson/COFFEE.git
 cd COFFEE
 ```
 Follow instructions in the FOOD README.md or go to the [repository's webpage](https://github.com/thomas-dsl-johnson/FOOD#). 
-**IMPORTANT:** Before running the container `cd ..` we will be working in the `COFFEE/` directory and want our `container_assets/` folder to be outside the FOOD directory.
+**IMPORTANT:** Before running the container `cd ../..` we will be working in the `COFFEE/` directory and want our `container_assets/` folder to be outside the FOOD directory.
