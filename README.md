@@ -2,13 +2,13 @@
 
 This repository documents my usage of the FOOD repository for my own FPGA and emulation purposes. In the README I have included some common example usage, which may provide useful. However, if you do not require the use of my code, I reccommend a fresh start in the FOOD Repository.
 
-## Usage
+# Usage
 Note:
 * Complete the Setup stage first
 * Assume the docker container we created is called `food_container`
 
 
-#### Inside terminal:
+## Inside terminal:
 Start the container:
 ```bash
 sudo docker start -ai food_container
@@ -55,7 +55,7 @@ git pull
 cd /workspace
 ```
 
-#### Inside Container:
+## Inside Container:
 Source variables:
 ```bash
 source /opt/intel/oneapi/setvars.sh --force
@@ -72,7 +72,7 @@ View report on .cpp file:
 icpx -fintelfpga -DFPGA_HARDWARE direct_lingam_fpga.cpp -Xshardware -fsycl-link=early -Xstarget=Agilex7 -o report.a
 ```
 
-## Setup
+# Setup
 
 **1. Clone the repo**
 ```bash
