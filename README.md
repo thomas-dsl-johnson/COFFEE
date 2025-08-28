@@ -24,6 +24,20 @@ Delete the container:
 sudo docker rm food_container
 ```
 
+n.b. For my use case, I worked on a virtual machine which I sshed into.
+View report from remote:
+```
+# Assume ./vector_add.report.prj/ is where the report is located in docker
+# Assume 12.345.678.90 is your machine
+# Assume 
+make report # or equivalent
+mv ./vector_add.report.prj/ /workspace
+exit # exit docker
+exit # exit vm
+scp -r 12.345.678.90 :/home/thomasjohnson/COFFEE/container_assets/vector_add.report.prj/ .
+open ./vector_add.report.prj/reports/report.html
+```
+
 ### Inside Container:
 Source variables:
 ```bash
@@ -39,20 +53,6 @@ icpx -fintelfpga -DFPGA_EMULATOR direct_lingam_fpga.cpp -o direct_lingam_emu
 View report on .cpp file:
 ```bash
 icpx -fintelfpga -DFPGA_HARDWARE direct_lingam_fpga.cpp -Xshardware -fsycl-link=early -Xstarget=Agilex7 -o report.a
-```
-
-n.b. For my use case, I worked on a virtual machine which I sshed into.
-View report from remote:
-```
-# Assume ./vector_add.report.prj/ is where the report is located in docker
-# Assume 12.345.678.90 is your machine
-# Assume 
-make report # or equivalent
-mv ./vector_add.report.prj/ /workspace
-exit # exit docker
-exit # exit vm
-scp -r 12.345.678.90 :/home/thomasjohnson/COFFEE/container_assets/vector_add.report.prj/ .
-open ./vector_add.report.prj/reports/report.html
 ```
 
 ## Setup
