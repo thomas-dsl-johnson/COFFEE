@@ -50,7 +50,7 @@ open ./vector_add.report.prj/reports/report.html
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/thomas-dsl-johnson/COFFEE.git
+git clone --recurse-submodules https://github.com/thomas-dsl-johnson/COFFEE.git
 ```
 
 **2. Use the FOOD repo to complete setup**
