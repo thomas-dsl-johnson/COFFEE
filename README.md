@@ -33,7 +33,7 @@ View report on .cpp file:
 icpx -fintelfpga -DFPGA_HARDWARE direct_lingam_fpga.cpp -Xshardware -fsycl-link=early -Xstarget=Agilex7 -o report.a
 ```
 
-View report fromm remote:
+View report from remote:
 ```
 # Assume ./vector_add.report.prj/ is where the report is located in docker
 # Assume 12.345.678.90 is your machine
