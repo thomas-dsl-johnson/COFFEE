@@ -1,0 +1,3 @@
+[submodule "external/FOOD"]
+	path = external/FOOD
+	url = https://github.com/thomas-dsl-johnson/FOOD.git
