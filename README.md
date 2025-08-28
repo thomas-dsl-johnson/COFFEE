@@ -3,25 +3,37 @@
 This repository documents my usage of the FOOD repository for my own FPGA and emulation purposes. If you do not require the use of my code, I reccommend a fresh start in the FOOD Repository.
 
 ## Usage
-* Complete Setup first
+Note:
+* Complete the Setup stage first
 * Assume the docker container we created is called `food_container`
 
-Start the container
+Start the container:
 ```bash
 sudo docker start -ai food_container
 ```
 
-Exit the container
+Exit the container:
 ```bash
 exit
 ```
 
-View report fromm remote
+Emulate .cpp file:
+```bash
+icpx -fintelfpga -DFPGA_EMULATOR direct_lingam_fpga.cpp -o direct_lingam_emu
+./direct_lingam_emu
+```
+
+View report on .cpp file:
+```bash
+icpx -fintelfpga -DFPGA_HARDWARE direct_lingam_fpga.cpp -Xshardware -fsycl-link=early -Xstarget=Agilex7 -o report.a
+```
+
+View report fromm remote:
 ```
 # Assume ./vector_add.report.prj/ is where the report is located in docker
 # Assume 12.345.678.90 is your machine
 # Assume 
-make report
+make report # or equivalent
 mv ./vector_add.report.prj/ /workspace
 exit # exit docker
 exit # exit vm
