@@ -8,12 +8,11 @@ Compile with OneAPI For FPGA Emulation and Execution
 ## Setup
 
 **# 1. Clone the repo**
-
 ```bash
 git clone https://github.com/thomas-dsl-johnson/COFFEE.git
 ```
 
-**# 2. Use the FOOD repo to complete setup*
+**# 2. Use the FOOD repo to complete setup**
 ```bash
 cd external/FOOD
 ```
