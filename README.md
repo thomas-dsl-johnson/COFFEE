@@ -3,7 +3,7 @@
 This repository documents my usage of the FOOD repository for my own FPGA and emulation purposes. In the README I have included some common example usage, which may provide useful. However, if you do not require the use of my code, I reccommend a fresh start in the FOOD Repository.
 
 # Usage
-Note:
+
 * Complete the Setup stage first
 * Assume the docker container we created is called `food_container`
 
