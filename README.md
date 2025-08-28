@@ -17,6 +17,11 @@ Exit the container:
 exit
 ```
 
+Source variables:
+```bash
+source /opt/intel/oneapi/setvars.sh --force
+```
+
 Emulate .cpp file:
 ```bash
 icpx -fintelfpga -DFPGA_EMULATOR direct_lingam_fpga.cpp -o direct_lingam_emu
