@@ -25,6 +25,7 @@ sudo docker rm food_container
 ```
 
 n.b. For my use case, I worked on a virtual machine which I sshed into.
+
 View report from remote:
 ```
 # Assume ./vector_add.report.prj/ is where the report is located in docker
@@ -36,6 +37,22 @@ exit # exit docker
 exit # exit vm
 scp -r 12.345.678.90 :/home/thomasjohnson/COFFEE/container_assets/vector_add.report.prj/ .
 open ./vector_add.report.prj/reports/report.html
+```
+
+'Upload' file to Docker container on remote from local:
+n.b. Currently not able to run git push on VM - TODO : fixing this would make this step more flexible
+```
+# Prerequisites: COFFEE repo is on local and on remote
+
+# Start on local
+git push
+
+# Enter remote
+cd COFFEE
+git pull
+
+# Start container
+cd /workspace
 ```
 
 ### Inside Container:
