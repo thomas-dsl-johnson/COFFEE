@@ -65,6 +65,7 @@ Emulate .cpp file:
 ```bash
 # Framework:
 icpx -fintelfpga -DFPGA_EMULATOR -I../../../../include vector_add.cpp -o vector_add.fpga_emu
+./vector_add.fpga_emu
 
 # Example:
 icpx -fintelfpga -DFPGA_EMULATOR direct_lingam_fpga.cpp -o direct_lingam_emu
