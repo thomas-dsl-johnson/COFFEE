@@ -61,7 +61,7 @@ Source variables:
 source /opt/intel/oneapi/setvars.sh --force
 ```
 
-Emulate .cpp file:
+Emulate (the kernel executes on the CPU):
 ```bash
 # Framework:
 icpx -fintelfpga -DFPGA_EMULATOR -I../../../../include vector_add.cpp -o vector_add.fpga_emu
@@ -81,16 +81,18 @@ icpx -fintelfpga -DFPGA_HARDWARE -I../../../../include vector_add.cpp -Xshardwar
 icpx -fintelfpga -DFPGA_HARDWARE direct_lingam_fpga.cpp -Xshardware -fsycl-link=early -Xstarget=Agilex7 -o report.a
 ```
 
-Simulator:
+Simulator (the kernel executes in a simulator):
 ```bash
 # Framework:
 icpx -fintelfpga -DFPGA_SIMULATOR -I../../../../include vector_add.cpp -Xssimulation -Xstarget=Agilex7 -Xsghdl -o vector_add_sim.fpga_sim
+CL_CONTEXT_MPSIM_DEVICE_INTELFPGA=1 ./vector_add.fpga_sim
 ```
 
 FPGA Hardware:
 ```bash
 # Framework:
 icpx -fintelfpga -DFPGA_HARDWARE -I../../../../include vector_add.cpp -Xshardware -Xstarget=Agilex7 -o vector_add.fpga
+vector_add.fpga.exe
 ```
 
 # Setup
