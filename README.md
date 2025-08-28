@@ -8,7 +8,7 @@ Note:
 * Assume the docker container we created is called `food_container`
 
 
-### Inside terminal:
+#### Inside terminal:
 Start the container:
 ```bash
 sudo docker start -ai food_container
@@ -24,9 +24,9 @@ Delete the container:
 sudo docker rm food_container
 ```
 
-n.b. For my use case, I worked on a virtual machine which I sshed into.
 
-View report from remote:
+
+View report from remote (I am working on a virtual machine which I ssh into):
 ```
 # Assume ./vector_add.report.prj/ is where the report is located in docker
 # Assume 12.345.678.90 is your machine
@@ -55,7 +55,7 @@ git pull
 cd /workspace
 ```
 
-### Inside Container:
+#### Inside Container:
 Source variables:
 ```bash
 source /opt/intel/oneapi/setvars.sh --force
