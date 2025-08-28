@@ -7,6 +7,8 @@ Note:
 * Complete the Setup stage first
 * Assume the docker container we created is called `food_container`
 
+
+### Inside terminal:
 Start the container:
 ```bash
 sudo docker start -ai food_container
@@ -22,6 +24,7 @@ Delete the container:
 sudo docker rm food_container
 ```
 
+### Inside Container:
 Source variables:
 ```bash
 source /opt/intel/oneapi/setvars.sh --force
@@ -38,6 +41,7 @@ View report on .cpp file:
 icpx -fintelfpga -DFPGA_HARDWARE direct_lingam_fpga.cpp -Xshardware -fsycl-link=early -Xstarget=Agilex7 -o report.a
 ```
 
+n.b. For my use case, I worked on a virtual machine which I sshed into.
 View report from remote:
 ```
 # Assume ./vector_add.report.prj/ is where the report is located in docker
