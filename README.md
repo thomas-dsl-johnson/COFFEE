@@ -87,6 +87,8 @@ Follow instructions in the FOOD README.md or go to the [repository's webpage](ht
 **IMPORTANT:** Before running the container `cd ../..` we will be working in the `COFFEE/` directory and want our `container_assets/` folder to be outside the FOOD directory.
 
 # Sources
-[oneAPI Samples - fpga_compile](https://github.com/oneapi-src/oneAPI-samples/tree/master/DirectProgramming/C++SYCL_FPGA/Tutorials/GettingStarted/fpga_compile)
+[Github oneAPI Samples - FPGA Compile Sample](https://github.com/oneapi-src/oneAPI-samples/tree/master/DirectProgramming/C++SYCL_FPGA/Tutorials/GettingStarted/fpga_compile)
+
+
 
 
