@@ -1,8 +1,7 @@
-# ☕ COFFEE
-Compile with OneAPI For FPGA Emulation and Execution
+# ☕ COFFEE - Compile with OneAPI For FPGA Emulation and Execution
 
 ## Usage
-
+Once [setup](#Setup) is complete 
 
 
 ## Setup
