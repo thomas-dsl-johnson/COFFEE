@@ -17,6 +17,11 @@ Exit the container:
 exit
 ```
 
+Delete the container:
+```bash
+sudo docker rm food_container
+```
+
 Source variables:
 ```bash
 source /opt/intel/oneapi/setvars.sh --force
