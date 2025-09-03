@@ -36,10 +36,16 @@ hardware built by the compiler
 * Get area and timing estimates of their designs for the
 desired FPGA.
 
-Landing page:
-![Landing Page](image.png)
+Open the FPGA report landing page:
+```text
+open file:///Users/thomasjohnson/Desktop/UROP/COFFEE/container_assets/Project/reports/html_report/report.html
+```
 
+Landing page of report comparisons:
+![Main Landing Page](assets/main_landing_page.png)
 
+Landing page of specific report:
+![Landing Page](assets/landing_page.png)
 
 ### Resources
 
