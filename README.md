@@ -35,7 +35,7 @@ make report # or equivalent
 mv ./vector_add.report.prj/ /workspace
 exit # exit docker
 exit # exit vm
-scp -r 12.345.678.90 :/home/thomasjohnson/COFFEE/container_assets/vector_add.report.prj/ .
+scp -r 12.345.678.90:/home/thomasjohnson/COFFEE/container_assets/vector_add.report.prj/ .
 open ./vector_add.report.prj/reports/report.html
 ```
 

@@ -1,1 +1,0 @@
-{"name":"Limiting maximum work-group size to 512 in function const_lambda_2(...) to support private memory.","details":[{"text":"Compiler Warning: Limiting maximum work-group size to 512 in function const_lambda_2(...) to support private memory."}]}
