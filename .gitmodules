@@ -4,3 +4,6 @@
 [submodule "container_assets/ACORN"]
 	path = container_assets/ACORN
 	url = git@github.com:thomas-dsl-johnson/ACORN.git
+[submodule "container_assets/QUICHE"]
+	path = container_assets/QUICHE
+	url = git@github.com:thomas-dsl-johnson/QUICHE.git
