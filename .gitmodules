@@ -1,3 +1,6 @@
 [submodule "external/FOOD"]
 	path = external/FOOD
 	url = https://github.com/thomas-dsl-johnson/FOOD.git
+[submodule "container_assets/ACORN"]
+	path = container_assets/ACORN
+	url = git@github.com:thomas-dsl-johnson/ACORN.git
