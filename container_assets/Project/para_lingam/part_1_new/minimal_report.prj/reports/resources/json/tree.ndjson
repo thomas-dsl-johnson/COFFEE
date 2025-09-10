@@ -1,3 +1,0 @@
-{"nodes":[1], "links":[]}
-{"name":"'lambda'()", "id":1, "type":"kernel", "children":[2]}
-{"name":"const_lambda.B0", "id":2, "type":"bb"}
