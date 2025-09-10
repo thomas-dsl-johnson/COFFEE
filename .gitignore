@@ -1,5 +1,5 @@
-# Ignore the report
-container_assets/Project/para_lingam/paralingam_part_1/paralingam_report.prj/
 # Ignore the Quartus Files
 container_assets/quartus_setup/*
-
+# Ignore report files
+*.a
+*.prj
