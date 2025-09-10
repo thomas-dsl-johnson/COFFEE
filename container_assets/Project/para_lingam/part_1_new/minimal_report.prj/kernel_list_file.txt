@@ -1,0 +1,2 @@
+USE_ME_VERBATIM:minimal_report_di
+const_lambda

@@ -1,0 +1,1 @@
+Compiler Command: aoc -o /tmp/step1_minimal_hw-f42ae2-6eb646.aocr /tmp/icpx-0880fea4f4/step1_minimal_hw-ea8b10-00bd3e.spv -sycl -rtl -dep-files=/tmp/icpx-0880fea4f4/step1_minimal_hw-6da347.d -output-report-folder=minimal_report.prj -g -hardware -target=Agilex7

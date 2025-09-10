@@ -1,0 +1,8 @@
+var pipelineNDJSON=[];
+var treeNDJSON=[{"nodes":[1], "links":[]},{"name":"'lambda'()", "id":1, "type":"kernel", "children":[2]},{"name":"const_lambda.B0", "id":2, "type":"bb"}];
+var new_lmvNDJSON=[{"nodes":[], "links":[]}];
+var systemJSON={};
+var blockNDJSON=[{"graphID":2, "nodes":[], "links":[]}];
+var scheduleNDJSON=[{"graphID":1, "nodes":[2], "links":[]},{"name":"const_lambda.B0", "id":2, "start":"0", "end":"0", "details":[{"type":"table"}], "type":"bb"}];
+var bottleneckNDJSON=[];
+var gmvNDJSON=[{"nodes":[4, 5, 7], "links":[{"from":6, "to":5}, {"from":5, "to":6}, {"from":8, "to":5}]},{"name":"__default__", "id":4, "details":[{"type":"table", "Board Supports Interleaving":"No", "Channels":"1 channel", "Maximum bandwidth the BSP can deliver":"0.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>", "Channel __default__ Width (bits)":"512"}], "type":"memsys", "children":[6]},{"name":"__default__", "id":6, "details":[{"type":"table", "Data Width":"512", "Address Width":"32", "Latency":"500", "ReadWrite Mode":"Read/Write", "Maximum Burst":"16", "Wait Request":"1", "Start Address":"0x0"}], "type":"bb"},{"name":"Memory Controller", "id":5, "parent":"4", "bw":"0.00", "num_channels":"1", "interleave":"0", "details":[{"type":"table", "Maximum bandwidth the BSP can deliver":"0.00 MB/s<br><small><i> Note: Realistic maximum bandwidth is about 90% of the above due to loss from interconnect and memory controller.</i></small>"}], "type":"bb"},{"name":"Global Memory Interconnect", "id":7, "parent":"4", "type":"bb", "children":[8]},{"name":"SHARE", "id":8, "type":"arb"}];
