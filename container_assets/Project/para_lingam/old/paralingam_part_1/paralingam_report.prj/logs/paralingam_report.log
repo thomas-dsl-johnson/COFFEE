@@ -1,2 +1,0 @@
-Compiler Command: aoc -o /tmp/main-1433f9-2c3a94.aocr /tmp/icpx-5fe9dc5848/main-02ce81-4ba19f.spv -sycl -rtl -dep-files=/tmp/icpx-5fe9dc5848/main-0fbb65.d,/tmp/icpx-5fe9dc5848/ParaLingam-581038.d -output-report-folder=paralingam_report.prj -g -hardware -target=Agilex7
-Compiler Warning: Limiting maximum work-group size to 512 in function const_lambda_2(...) to support private memory.
